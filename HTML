@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CAIPHUS is a student support platform offering guidance on wellbeing, finances, exams and study skills.">
+    <title>CAIPHUS | Student Support Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#home" class="logo">
+            <span class="logo-icon">C</span>
+            <span>CAIPHUS</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#stress">Wellbeing</a>
+            <a href="#finance">Finance</a>
+            <a href="#exams">Exams</a>
+            <a href="#tips">Study Tips</a>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">YOUR STUDENT SUPPORT SPACE</p>
+
+            <h1>Welcome to <span>CAIPHUS</span></h1>
+
+            <p>
+                Empowering Students. Inspiring Progress.
+                Your trusted student support space for managing
+                stress, financial challenges, academic pressure
+                and preparing for a successful future.
+            </p>
+
+            <a href="#about" class="btn">Explore CAIPHUS</a>
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="section about" id="about">
+        <div class="section-heading">
+            <p class="eyebrow">GET TO KNOW US</p>
+            <h2>About CAIPHUS</h2>
+            <p>Supporting students through every step of their academic journey.</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-card">
+                <h3>Our Mission</h3>
+                <p>
+                    To provide students with accessible educational
+                    information, practical tools and encouragement
+                    to help them manage everyday student challenges.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Our Vision</h3>
+                <p>
+                    To create a supportive learning environment where
+                    students feel informed, motivated and confident
+                    about their future.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Our Values</h3>
+                <p>
+                    Growth, responsibility, positivity, learning,
+                    understanding and student empowerment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- STUDENT SUPPORT SERVICES -->
+    <section class="section services">
+        <div class="section-heading">
+            <p class="eyebrow">HOW WE CAN HELP</p>
+            <h2>Student Support Areas</h2>
+            <p>Explore different areas of student life where CAIPHUS can help.</p>
+        </div>
+
+        <div class="service-grid">
+
+            <a href="#stress" class="service-card">
+                <div class="service-icon">♡</div>
+                <h3>Mental Wellbeing</h3>
+                <p>Explore simple ways to manage stress and take care of yourself.</p>
+            </a>
+
+            <a href="#finance" class="service-card">
+                <div class="service-icon">₱</div>
+                <h3>Financial Guidance</h3>
+                <p>Learn about budgeting and managing your student expenses.</p>
+            </a>
+
+            <a href="#exams" class="service-card">
+                <div class="service-icon">✎</div>
+                <h3>Exam Preparation</h3>
+                <p>Discover ways to prepare for examinations and stay organised.</p>
+            </a>
+
+            <a href="#tips" class="service-card">
+                <div class="service-icon">★</div>
+                <h3>Study Resources</h3>
+                <p>Find useful study habits and techniques to improve learning.</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- WELLBEING SECTION -->
+    <section class="section feature-section" id="stress">
+        <div class="section-heading">
+            <p class="eyebrow">TAKE CARE OF YOURSELF</p>
+            <h2>Student Mental Wellbeing</h2>
+            <p>Your wellbeing matters as much as your academic success.</p>
+        </div>
+
+        <div class="feature-content">
+            <div class="feature-text">
+                <h3>Managing Student Stress</h3>
+                <p>
+                    Academic pressure, assignments, examinations and
+                    personal responsibilities can sometimes feel
+                    overwhelming. Taking breaks, planning your work
+                    and talking to someone you trust can help.
+                </p>
+
+                <ul>
+                    <li>Take regular breaks while studying.</li>
+                    <li>Get enough sleep and rest.</li>
+                    <li>Talk to someone you trust when struggling.</li>
+                    <li>Break large tasks into smaller activities.</li>
+                </ul>
+
+                <p class="disclaimer">
+                    CAIPHUS provides general educational wellbeing
+                    information, not professional mental-health care.
+                    If you are struggling, consider speaking with a
+                    qualified professional or student support service.
+                </p>
+            </div>
+
+            <div class="tool-card">
+                <h3>Breathing Exercise</h3>
+                <p>Try a simple breathing exercise to take a moment for yourself.</p>
+
+                <div class="breathing-circle" id="breathingCircle">
+                    <span id="breathingText">Ready?</span>
+                </div>
+
+                <p id="breathingStatus" aria-live="polite">
+                    Press the button to begin.
+                </p>
+
+                <button class="btn" id="breathingButton">
+                    Start Exercise
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FINANCE SECTION -->
+    <section class="section finance-section" id="finance">
+        <div class="section-heading">
+            <p class="eyebrow">BE SMART WITH YOUR MONEY</p>
+            <h2>Student Financial Guidance</h2>
+            <p>Small budgeting habits can make a difference.</p>
+        </div>
+
+        <div class="feature-content">
+            <div class="feature-text">
+                <h3>Why Budgeting Matters</h3>
+
+                <p>
+                    A budget helps you understand how much money
+                    you receive and how much you spend. It can help
+                    you plan for essential needs and avoid unnecessary
+                    expenses.
+                </p>
+
+                <ul>
+                    <li>Prioritise essential expenses.</li>
+                    <li>Keep track of your spending.</li>
+                    <li>Set aside savings where possible.</li>
+                    <li>Plan before making purchases.</li>
+                </ul>
+            </div>
+
+            <div class="tool-card">
+                <h3>Student Budget Calculator</h3>
+
+                <label for="income">Monthly Income (P)</label>
+                <input type="number" id="income" placeholder="Enter your income" min="0">
+
+                <label for="expenses">Monthly Expenses (P)</label>
+                <input type="number" id="expenses" placeholder="Enter your expenses" min="0">
+
+                <button class="btn" id="budgetButton">
+                    Calculate Budget
+                </button>
+
+                <div class="result" id="budgetResult" aria-live="polite">
+                    Your result will appear here.
+                </div>
+
+                <p class="disclaimer">
+                    This calculator provides a simple estimate.
+                    It does not store or submit your financial information.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- EXAM SECTION -->
+    <section class="section feature-section" id="exams">
+        <div class="section-heading">
+            <p class="eyebrow">PREPARE WITH CONFIDENCE</p>
+            <h2>Exam Preparation</h2>
+            <p>Good preparation starts with good planning.</p>
+        </div>
+
+        <div class="feature-content">
+            <div class="feature-text">
+                <h3>How to Prepare for Exams</h3>
+
+                <p>
+                    Preparing early can reduce last-minute pressure
+                    and help you understand your study material better.
+                </p>
+
+                <ul>
+                    <li>Create a realistic study timetable.</li>
+                    <li>Review your notes regularly.</li>
+                    <li>Practise questions and past papers.</li>
+                    <li>Take short breaks between study sessions.</li>
+                    <li>Get enough rest before examination day.</li>
+                </ul>
+            </div>
+
+            <div class="tool-card">
+                <h3>Study Focus Timer</h3>
+                <p>Try 25 minutes of focused study followed by a break.</p>
+
+                <div class="timer" id="timer">25:00</div>
+
+                <div class="timer-buttons">
+                    <button class="btn" id="startTimer">Start</button>
+                    <button class="btn secondary" id="pauseTimer">Pause</button>
+                    <button class="btn secondary" id="resetTimer">Reset</button>
+                </div>
+
+                <p id="timerStatus" aria-live="polite">
+                    Ready to study?
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- STUDY TIPS SECTION -->
+    <section class="section tips-section" id="tips">
+        <div class="section-heading">
+            <p class="eyebrow">LEARN BETTER EVERY DAY</p>
+            <h2>Student Study Tips</h2>
+            <p>Build habits that support your academic development.</p>
+        </div>
+
+        <div class="tips-grid">
+            <div class="tip-card">
+                <span>01</span>
+                <h3>Plan Your Day</h3>
+                <p>Write down your tasks and prioritise the most important ones.</p>
+            </div>
+
+            <div class="tip-card">
+                <span>02</span>
+                <h3>Avoid Distractions</h3>
+                <p>Choose a quiet study environment and limit unnecessary phone use.</p>
+            </div>
+
+            <div class="tip-card">
+                <span>03</span>
+                <h3>Ask Questions</h3>
+                <p>Ask lecturers, classmates or tutors when you do not understand something.</p>
+            </div>
+
+            <div class="tip-card">
+                <span>04</span>
+                <h3>Stay Consistent</h3>
+                <p>Study regularly instead of waiting until examination time.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MOTIVATION SECTION -->
+    <section class="motivation">
+        <h2>Your Future Starts With What You Do Today.</h2>
+        <p>Keep learning. Keep growing. Keep moving forward.</p>
+        <a href="#home" class="btn">Back to Top</a>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h2>CAIPHUS</h2>
+                <p>Empowering Students. Inspiring Progress.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#stress">Wellbeing</a>
+                <a href="#finance">Finance</a>
+                <a href="#exams">Exams</a>
+            </div>
+
+            <div>
+                <h3>Our Purpose</h3>
+                <p>Supporting students with useful information, learning tools and encouragement.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 CAIPHUS. All Rights Reserved.</p>
+            <p>Created as a student learning project.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
